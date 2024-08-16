@@ -1,0 +1,86 @@
+body {
+    background-color: #d5d9dc;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    background-color: #f7f6f6;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.game-title {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.input_number {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+.messages {
+    margin-top: 20px;
+}
+
+.message {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+#gussinfo{
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.guidline{
+    margin: 5px 0;
+    font-size: 16px;
+    color: #191818;
+    text-shadow: 1px 1px 2px rgba(234, 18, 18, 0.441);
+}
+
+.startAgain{
+    background-color: lightblue;
+    border: 1px solid rgb(113, 113, 144);
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
