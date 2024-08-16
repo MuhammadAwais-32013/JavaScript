@@ -1,7 +1,9 @@
 let timerId= setTimeout(function SayHi(){
     console.log("Parent");
     timerId=setTimeout(()=>{
-        console.log("Child");
+         SayHi();
+         console.log("child");
+         
         
     },2000)
     
