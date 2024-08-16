@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Back in Js</title>
+</head>
+<body>
+    <h2>Call back and call back hell </h2>
+
+    <script>
+        
+function fetchData(callback) {
+    setTimeout(()=>{
+        const data="Data Fetched";
+        callback(data);
+        
+    },2000)
+}
+
+function dataInfo(data) {
+    console.log(data);
+    
+}
+
+// fetchData(dataInfo)
+
+// *******************Find sum in Array***********************
+
+//  let UserInput=(sum)=> {
+//    setTimeout(()=>{
+//     // const Array=[];
+//    alert('khello');
+   
+//     //   let input=prompt("please enter a number to sum :");
+//     //   Array.push(parent(input));
+//     UserInput=setTimeout( UserInput,2000);
+//    },2000)   
+// }
+
+// let sum=(arry)=>{
+//     let sum=0;
+//     for (const element of arry) {
+       
+//         sum+=sum;
+    
+//     }
+//     alert(`Sum of entered Numbers is : ${sum}`)
+// }
+
+// UserInput(sum)
+
+
+let data=(sum)=>{
+    setTimeout(()=>{
+        sum([1,2,3,5,6])
+    },2000)
+}
+
+function sum(number) {
+    let sum=0;
+    for (const element of number) {
+        sum+=sum;
+    }
+    console.log(`Sum is : ${sum}`);
+    
+}
+
+data(sum);
+    </script>
+</body>
+</html>
